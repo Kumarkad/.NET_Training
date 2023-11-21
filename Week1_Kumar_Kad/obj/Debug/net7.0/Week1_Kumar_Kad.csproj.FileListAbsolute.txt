@@ -1,0 +1,14 @@
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\bin\Debug\net7.0\Week1_Kumar_Kad.exe
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\bin\Debug\net7.0\Week1_Kumar_Kad.deps.json
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\bin\Debug\net7.0\Week1_Kumar_Kad.runtimeconfig.json
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\bin\Debug\net7.0\Week1_Kumar_Kad.dll
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\bin\Debug\net7.0\Week1_Kumar_Kad.pdb
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.AssemblyInfoInputs.cache
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.AssemblyInfo.cs
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.csproj.CoreCompileInputs.cache
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.dll
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\refint\Week1_Kumar_Kad.dll
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.pdb
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\Week1_Kumar_Kad.genruntimeconfig.cache
+C:\Users\tony\source\repos\Week1_Kumar_Kad\Week1_Kumar_Kad\obj\Debug\net7.0\ref\Week1_Kumar_Kad.dll
