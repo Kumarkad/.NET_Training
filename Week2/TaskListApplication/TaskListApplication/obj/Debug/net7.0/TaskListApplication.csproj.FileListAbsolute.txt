@@ -1,0 +1,14 @@
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\bin\Debug\net7.0\TaskListApplication.exe
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\bin\Debug\net7.0\TaskListApplication.deps.json
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\bin\Debug\net7.0\TaskListApplication.runtimeconfig.json
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\bin\Debug\net7.0\TaskListApplication.dll
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\bin\Debug\net7.0\TaskListApplication.pdb
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.AssemblyInfoInputs.cache
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.AssemblyInfo.cs
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.csproj.CoreCompileInputs.cache
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.dll
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\refint\TaskListApplication.dll
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.pdb
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\TaskListApplication.genruntimeconfig.cache
+C:\Users\kumar\source\repos\TaskListApplication\TaskListApplication\obj\Debug\net7.0\ref\TaskListApplication.dll
