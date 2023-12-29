@@ -97,7 +97,7 @@ namespace TaskManagerAPI.Controllers
             return BadRequest("UId Not Found");
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult GetTaskByUId(string uId)
         {
             try
@@ -115,7 +115,7 @@ namespace TaskManagerAPI.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult GetAllTask()
         {
             try
