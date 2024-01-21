@@ -6,5 +6,7 @@ namespace VisitorSecurityClearanceSystemAPI.Interfaces
     {
         Task<OfficeUser> AddOfficeUser(OfficeUser user);
         Task<OfficeUser> LoginOfficeUser(string username, string password);
+        Task<OfficeUser> GetOfficeUserbyUId(string UId);
+        Task<OfficeUser> DeleteUser(OfficeUser user);
     }
 }

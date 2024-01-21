@@ -5,6 +5,7 @@ using Microsoft.Azure.Cosmos;
 using VisitorSecurityClearanceSystemAPI.DTO;
 using VisitorSecurityClearanceSystemAPI.Entities;
 using VisitorSecurityClearanceSystemAPI.Interfaces;
+using VisitorSecurityClearanceSystemAPI.Services;
 
 namespace VisitorSecurityClearanceSystemAPI.Controllers
 {
@@ -17,14 +18,16 @@ namespace VisitorSecurityClearanceSystemAPI.Controllers
         public IManagerService _managerService;
         public IOfficeUserService _officeUserService;
         public ISecurityUserService _securityUserService;
+        public IVisitorService _visitorService;
         public IMapper _mapper;
 
-        public ManagerController(IManagerService managerService, IOfficeUserService officeUserService, ISecurityUserService securityUserService, IMapper mapper)
+        public ManagerController(IManagerService managerService, IOfficeUserService officeUserService, ISecurityUserService securityUserService, IVisitorService visitorService, IMapper mapper)
         {
             _container = GetContainer();
             _managerService = managerService;
             _officeUserService = officeUserService;
             _securityUserService = securityUserService;
+            _visitorService = visitorService;
             _mapper = mapper;
         }
 
@@ -121,6 +124,163 @@ namespace VisitorSecurityClearanceSystemAPI.Controllers
             catch (Exception ex)
             {
                 return BadRequest("Data Adding Failed " + ex);
+            }
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteOfficeUser(string UId)
+        {
+            var user = await _officeUserService.GetOfficeUserbyUId(UId);
+            if (user != null)
+            {
+                try
+                {
+                    user.Active = false;
+                    await _officeUserService.DeleteUser(user);
+                    return Ok("User Deleted Successfully !!!");
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex);
+                }
+            }
+            else
+            {
+                return Ok("User Not Found !!!");
+            }
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteSecurityUser(string UId)
+        {
+            var user = await _securityUserService.GetSecurityUserbyUId(UId);
+            if (user != null)
+            {
+                try
+                {
+                    user.Active = false;
+                    await _securityUserService.DeleteUser(user);
+                    return Ok("User Deleted Successfully !!!");
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex);
+                }
+            }
+            else
+            {
+                return Ok("User Not Found !!!");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllRequest()
+        {
+            try
+            {
+                var requestList = await _visitorService.GetAllVisitor();
+
+                if (requestList != null)
+                {
+                    List<RequestModel> requests = new List<RequestModel>();
+                    foreach (var request in requestList)
+                    {
+                        RequestModel requestModel = _mapper.Map<RequestModel>(request);
+                        requests.Add(requestModel);
+                    }
+                    return Ok(requests);
+                }
+                else
+                {
+                    return NotFound("No Request Found !!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Data Get Failed");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllPendingRequest()
+        {
+            try
+            {
+                var requestList = await _visitorService.GetAllPendingVisitor();
+
+                if (requestList != null)
+                {
+                    List<RequestModel> requests = new List<RequestModel>();
+                    foreach (var request in requestList)
+                    {
+                        RequestModel requestModel = _mapper.Map<RequestModel>(request);
+                        requests.Add(requestModel);
+                    }
+                    return Ok(requests);
+                }
+                else
+                {
+                    return NotFound("No Request Found !!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Data Get Failed");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllApprovedRequest()
+        {
+            try
+            {
+                var requestList = await _visitorService.GetAllApprovedVisitor();
+
+                if (requestList != null)
+                {
+                    List<RequestModel> requests = new List<RequestModel>();
+                    foreach (var request in requestList)
+                    {
+                        RequestModel requestModel = _mapper.Map<RequestModel>(request);
+                        requests.Add(requestModel);
+                    }
+                    return Ok(requests);
+                }
+                else
+                {
+                    return NotFound("No Request Found !!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Data Get Failed");
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllRejectedRequest()
+        {
+            try
+            {
+                var requestList = await _visitorService.GetAllRejectedVisitor();
+
+                if (requestList != null)
+                {
+                    List<RequestModel> requests = new List<RequestModel>();
+                    foreach (var request in requestList)
+                    {
+                        RequestModel requestModel = _mapper.Map<RequestModel>(request);
+                        requests.Add(requestModel);
+                    }
+                    return Ok(requests);
+                }
+                else
+                {
+                    return NotFound("No Request Found !!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Data Get Failed");
             }
         }
         private Container GetContainer()

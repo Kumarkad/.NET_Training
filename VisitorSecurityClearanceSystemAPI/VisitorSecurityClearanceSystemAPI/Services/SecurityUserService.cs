@@ -34,6 +34,16 @@ namespace VisitorSecurityClearanceSystemAPI.Services
             return response;
         }
 
+        public async Task<SecurityUser> DeleteUser(SecurityUser user)
+        {
+            return await _cosmosService.DeleteSecurityUser(user);
+        }
+
+        public async Task<SecurityUser> GetSecurityUserbyUId(string UId)
+        {
+            return await _cosmosService.GetSecurityUserbyUId(UId);
+        }
+
         public async Task<SecurityUser> LoginSecurityUser(string username, string password)
         {
             var response = await _cosmosService.LoginSecurityUser(username, password);

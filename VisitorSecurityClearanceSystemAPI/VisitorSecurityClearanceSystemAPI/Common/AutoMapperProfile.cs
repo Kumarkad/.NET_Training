@@ -12,6 +12,7 @@ namespace VisitorSecurityClearanceSystemAPI.Common
             CreateMap<OfficeUser, OfficeUserModel>().ReverseMap();
             CreateMap<Visitor, VisitorModel>().ReverseMap();
             CreateMap<SecurityUser, SecurityUserModel>().ReverseMap();
+            CreateMap<Visitor, RequestModel>().ReverseMap();
         }
     }
 }
